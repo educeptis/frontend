@@ -1,0 +1,215 @@
+.HeroSection {
+  height: 100vh;
+  max-height: 500px;
+
+  padding: 0 64px;
+
+  display: grid;
+  grid-template-columns: 300px minmax(300px, max-content);
+  gap: 48px;
+
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.HeroSection > img {
+  width: 300px;
+}
+
+.HeroSectionContent {
+  display: grid;
+  gap: 24px;
+}
+
+.HeroSectionContent h1 {
+  color: var(--blue);
+}
+
+.HeroSectionContentSearch {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+
+  padding: 8px;
+}
+
+.HeroSectionContentSearch img {
+  width: 24px;
+}
+
+.HeroSectionContentSearch input {
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--blue);
+}
+
+.HeroSectionContentSearchResults {
+  display: grid;
+  gap: 8px;
+
+  padding-left: 40px;
+}
+
+.HeroSectionContentSearchResults li {
+  display: grid;
+  grid-template-columns: 200px 100px 100px;
+  justify-content: space-between;
+
+  padding: 8px;
+  border-bottom:1px solid var(--yellow);
+}
+
+.HeroSectionContentSearchResults li p:first-child {
+  color: var(--black);
+}
+
+.HeroSectionContentSearchResults li p {
+  color: var(--blue);
+}
+
+
+.EducationalProfilingSection {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  justify-content: space-between;
+  gap: 48px;
+
+  padding: 48px 32px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.EducationalProfilingSectionContent {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+}
+
+.EducationalProfilingSection img {
+  width: 400px;
+}
+
+.CareerBuildingSection {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  justify-content: space-between;
+  gap: 48px;
+
+  padding: 48px 32px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.CareerBuildingSectionContent {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+}
+
+.CareerBuildingSection img {
+  width: 400px;
+}
+
+.TalentDiscoverySection {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  justify-content: space-between;
+  gap: 48px;
+
+  padding: 48px 32px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.TalentDiscoverySectionContent {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+}
+
+.TalentDiscoverySection img {
+  width: 400px;
+}
+
+.FeaturesSection {
+  padding: 32px 32px;
+  display: grid;
+  gap: 32px;
+
+  background-image: linear-gradient(to bottom, var(--blue), var(--black));
+}
+
+.FeaturesSection h2 {
+  color: var(--white);
+  text-align: center;
+  margin: 48px 0;
+}
+
+.FeaturesSection ul {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.FeaturesSection li {
+  display: grid;
+  grid-template-rows: max-content 250px max-content;
+  gap: 16px;
+}
+
+.FeaturesSection li img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.FeaturesSection li h3 {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.FeaturesSection li p {
+  color: var(--white);
+  text-align: center;
+}
+
+.GetStartedSection {
+  padding: 128px 32px;
+
+  display: grid;
+  gap: 32px;
+  place-items: center;
+}
+
+.GetStartedSection h2 {
+  background: -webkit-linear-gradient(0deg, var(--blue), var(--yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.GetStartedSection button {
+  padding: 16px 32px;
+  background: var(--yellow);
+  color: var(--blue);
+  border: 4px solid;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+}

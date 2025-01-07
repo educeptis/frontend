@@ -1,0 +1,81 @@
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 300px 300px;
+  gap: 32px;
+
+  padding: 48px;
+
+  background-color: var(--yellow);
+}
+
+.Logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  color: var(--blue);
+  background-color: var(--white);
+
+  font-size: 24px;
+
+  width: max-content;
+}
+
+.Footer h3 {
+  color: var(--blue);
+}
+
+.Footer ul {
+  display: grid;
+  gap: 16px;
+}
+
+.Footer a {
+  color: var(--black);
+}
+
+.Footer section:first-of-type {
+  display: grid;
+  gap: 16px;
+}
+
+.Footer section:first-of-type ul {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+
+.Footer section:first-of-type ul img {
+  width: 36px;
+}
+
+.Footer section:first-of-type > img {
+  width: 150px;
+}
+
+.Footer section:nth-of-type(2) {
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+.Footer section:nth-of-type(3) {
+  display: grid;
+  gap: 32px;
+}
+
+.Footer section:nth-of-type(3) > div {
+  display: grid;
+  gap: 24px;
+}
+
+.Footer section:nth-of-type(3) > div:first-child div {
+  display: grid;
+  gap: 8px;
+}
+
+.Footer section:nth-of-type(3) div:first-child p {
+  color: var(--blue);
+}

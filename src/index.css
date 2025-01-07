@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #064c88;
+  --dark-blue: #021322;
+  --yellow: #ffb61d;
+  --brown: #996d11;
+  --black: #000;
+  --white: #fff;
+
+  --border: #e0e0e0;
+
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inder', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+
+  transition: scale 0.2s;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+a:active,
+button:active {
+  scale: 0.95;
+}
+
+ul {
+  list-style-type: none;
+}

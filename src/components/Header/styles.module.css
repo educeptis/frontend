@@ -1,0 +1,66 @@
+.Header {
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+
+  position: sticky;
+  top: 0;
+
+  background-color: var(--white);
+  z-index: 100;
+}
+
+.HeaderLogo {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 1.5rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.HeaderNav {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 32px;
+
+  justify-content: center;
+}
+
+.HeaderNav a {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+
+  padding: 20px 0 16px;
+}
+
+.HeaderNav a img {
+  width: 28px;
+}
+
+.HeaderNav a.active {
+  border-bottom: 4px solid var(--yellow);
+}
+
+.HeaderActions {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 16px;
+  align-items: center;
+}
+
+.HeaderActions a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+}
+
+.HeaderActions a:first-child {
+  background-color: var(--blue);
+  color: var(--white);
+}
