@@ -8,6 +8,10 @@
   background-color: var(--yellow);
 }
 
+.ShowOnMobile {
+  display: none;
+}
+
 .Logo {
   display: flex;
   gap: 8px;
@@ -58,16 +62,20 @@
 .Footer section:nth-of-type(2) {
   display: grid;
   gap: 24px;
-  align-content: start;
+
+  place-content: start;
 }
 
 .Footer section:nth-of-type(3) {
   display: grid;
   gap: 32px;
+
+  place-content: start;
 }
 
 .Footer section:nth-of-type(3) > div {
   display: grid;
+  place-content: start;
   gap: 24px;
 }
 
@@ -78,4 +86,37 @@
 
 .Footer section:nth-of-type(3) div:first-child p {
   color: var(--blue);
+}
+
+@media (max-width: 1000px) {
+  .Footer {
+    grid-template-columns: 1fr 250px 250px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Footer {
+    grid-template-columns: 1fr;
+
+    padding: 48px 16px;
+
+    gap: 32px;
+  }
+
+  .FooterMobileTop {
+    display: grid;
+    gap: 16px;
+  }
+
+  .HideOnMobile {
+    display: none;
+  }
+
+  .ShowOnMobile {
+    display: grid;
+  }
+
+  .Footer section:first-of-type {
+    order: 3;
+  }
 }

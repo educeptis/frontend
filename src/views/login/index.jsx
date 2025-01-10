@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Header from '../../components/Header'
 
 import styles from './styles.module.css'
 
@@ -40,6 +41,10 @@ function LoginPage() {
 
   return (
     <div className={styles['LoginPage']}>
+      <section className={styles['HeaderSection']}>
+        <Header />
+      </section>
+      
       <section className={styles['SlideShowSection']}>
         <div className={styles['SlideShow']}>
           <img src={slides[activeSlide].image} alt="Slide" />

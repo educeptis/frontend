@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.HeaderSection {
+  display: none;
+}
+
 .SlideShowSection {
   background: linear-gradient(to bottom, var(--blue), var(--dark-blue));
   display: grid;
@@ -267,4 +271,21 @@
 
   font-size: 16px;
   font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .LoginPage {
+    grid-template-columns: 1fr;
+  }
+
+  .HeaderSection {
+    display: block;
+
+    position: sticky;
+    top: 0;
+  }
+
+  .SlideShowSection {
+    display: none;
+  }
 }
