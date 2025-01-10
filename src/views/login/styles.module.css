@@ -126,6 +126,8 @@
   text-align: center;
 
   font-size: 18px;
+
+  z-index: -1;
 }
 
 .LoginForm h4 span {
