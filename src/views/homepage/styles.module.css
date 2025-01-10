@@ -213,3 +213,93 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+@media (max-width: 1100px) {
+  .FeaturesSection ul {
+    grid-template-columns: repeat(2, 250px);
+    gap: 48px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .HeroSection {
+    grid-template-columns: 1fr;
+    padding: 64px 32px;
+
+    max-height: max-content;
+    height: max-content;
+  }
+
+  .HeroSection > img {
+    margin: 32px auto;
+  }
+
+  .HeroSectionContent h1 {
+    text-align: center;
+  }
+
+  .HeroSectionContentSearchResults {
+    padding-left: 0;
+  }
+
+  .EducationalProfilingSection {
+    padding: 48px 16px;
+  }
+
+  .CareerBuildingSection {
+    padding: 48px 16px;
+  }
+
+  .TalentDiscoverySection {
+    padding: 48px 16px;
+  }
+
+  .GetStartedSection {
+    padding: 64px 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .HeroSectionContent ul {
+    display: none;
+  }
+
+  .EducationalProfilingSection {
+    grid-template-columns: 1fr;
+  }
+
+  .EducationalProfilingSection img {
+    margin: 0 auto;
+
+    max-width: 100%;
+  }
+
+  .CareerBuildingSection {
+    grid-template-columns: 1fr;
+  }
+
+  .CareerBuildingSection img {
+    margin: 0 auto;
+
+    order: 2;
+
+    max-width: 100%;
+  }
+
+  .TalentDiscoverySection {
+    grid-template-columns: 1fr;
+  }
+
+  .TalentDiscoverySection img {
+    margin: 0 auto;
+
+    max-width: 100%;
+  }
+
+  .FeaturesSection ul {
+    grid-template-columns: 250px;
+    gap: 48px;
+    justify-content: center;
+  }
+}

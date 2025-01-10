@@ -4,13 +4,24 @@ import styles from './styles.module.css'
 function Footer() {
   return (
     <footer className={styles['Footer']}>
-      <section>
+      <div className={`${styles['FooterMobileTop']} ${styles['ShowOnMobile']}`}>
         <div className={styles['Logo']}>
           <img src="favicon.png" alt="Logo" />
           Educeptis
         </div>
 
         <p>
+          Educeptis is dedicated to empowering individuals through education and career development. We provide innovative tools and insights to enhance learning and professional growth.
+        </p>
+      </div>
+
+      <section>
+        <div className={`${styles['Logo']} ${styles['HideOnMobile']}`}>
+          <img src="favicon.png" alt="Logo" />
+          Educeptis
+        </div>
+
+        <p className={styles['HideOnMobile']}>
           Educeptis is dedicated to empowering individuals through education and career development. We provide innovative tools and insights to enhance learning and professional growth.
         </p>
 

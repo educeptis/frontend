@@ -8,7 +8,7 @@ function FeaturesPage() {
       <Header />
 
       <main>
-        Cominng soon...
+        Coming soon...
       </main>
     </div>
   )
