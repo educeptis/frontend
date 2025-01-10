@@ -15,12 +15,16 @@
   --white: #fff;
 
   --border: #e0e0e0;
+  --dim: #898989;
 
   font-size: 16px;
+
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Inder', sans-serif;
+
   background-color: var(--white);
   color: var(--black);
 }
@@ -75,3 +79,4 @@ button:active {
 ul {
   list-style-type: none;
 }
+

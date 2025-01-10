@@ -105,7 +105,7 @@ function Footer() {
           <h3>Contact Us</h3>
 
           <div>
-            <p>Email: info@eduprofiler.com</p>
+            <p>Email: info@educeptis.com</p>
             <p>Phone: (123) 456-7890</p>
           </div>
         </div>
