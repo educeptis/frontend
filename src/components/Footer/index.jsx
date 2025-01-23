@@ -116,7 +116,7 @@ function Footer() {
           <h3>Contact Us</h3>
 
           <div>
-            <p>Email: info@educeptis.com</p>
+            <p className={styles['FooterEmail']}>Email: info@educeptis.com</p>
             <p>Phone: (123) 456-7890</p>
           </div>
         </div>

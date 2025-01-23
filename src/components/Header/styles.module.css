@@ -2,6 +2,8 @@
   padding: 0 16px;
   border-bottom: 1px solid var(--border);
 
+  max-height: 120px;
+
   display: grid;
   grid-template-columns: 200px 1fr 200px;
 

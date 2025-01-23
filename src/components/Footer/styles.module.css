@@ -6,6 +6,8 @@
   padding: 48px;
 
   background-color: var(--yellow);
+
+  max-height: 1200px;
 }
 
 .ShowOnMobile {
@@ -91,6 +93,8 @@
 @media (max-width: 1000px) {
   .Footer {
     grid-template-columns: 1fr 250px 250px;
+
+    max-height: 1400px;
   }
 }
 
@@ -101,6 +105,8 @@
     padding: 48px 16px;
 
     gap: 32px;
+
+    max-height: max-content;
   }
 
   .FooterMobileTop {
